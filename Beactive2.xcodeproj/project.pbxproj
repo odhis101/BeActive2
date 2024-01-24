@@ -14,6 +14,11 @@
 		420CD7DF2B5F9D4A00D6F35C /* Beactive2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7DE2B5F9D4A00D6F35C /* Beactive2Tests.swift */; };
 		420CD7E92B5F9D4A00D6F35C /* Beactive2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7E82B5F9D4A00D6F35C /* Beactive2UITests.swift */; };
 		420CD7EB2B5F9D4A00D6F35C /* Beactive2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7EA2B5F9D4A00D6F35C /* Beactive2UITestsLaunchTests.swift */; };
+		420CD7F82B5F9D7100D6F35C /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7F72B5F9D7100D6F35C /* MyTabView.swift */; };
+		420CD7FA2B5F9DD700D6F35C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7F92B5F9DD700D6F35C /* HomeView.swift */; };
+		420CD7FC2B5F9E3C00D6F35C /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7FB2B5F9E3C00D6F35C /* ActivityCard.swift */; };
+		420CD7FE2B5F9EA500D6F35C /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7FD2B5F9EA500D6F35C /* HealthManager.swift */; };
+		420FF1BC2B5FA35200B2A4C0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420FF1BB2B5FA35200B2A4C0 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,12 @@
 		420CD7E42B5F9D4A00D6F35C /* Beactive2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Beactive2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		420CD7E82B5F9D4A00D6F35C /* Beactive2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beactive2UITests.swift; sourceTree = "<group>"; };
 		420CD7EA2B5F9D4A00D6F35C /* Beactive2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beactive2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		420CD7F72B5F9D7100D6F35C /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		420CD7F92B5F9DD700D6F35C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		420CD7FB2B5F9E3C00D6F35C /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
+		420CD7FD2B5F9EA500D6F35C /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		420FF1B92B5FA35200B2A4C0 /* Beactive2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beactive2.entitlements; sourceTree = "<group>"; };
+		420FF1BB2B5FA35200B2A4C0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420FF1BC2B5FA35200B2A4C0 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,7 @@
 				420CD7DD2B5F9D4A00D6F35C /* Beactive2Tests */,
 				420CD7E72B5F9D4A00D6F35C /* Beactive2UITests */,
 				420CD7CB2B5F9D3A00D6F35C /* Products */,
+				420FF1BA2B5FA35200B2A4C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +107,13 @@
 		420CD7CC2B5F9D3A00D6F35C /* Beactive2 */ = {
 			isa = PBXGroup;
 			children = (
+				420FF1B92B5FA35200B2A4C0 /* Beactive2.entitlements */,
 				420CD7CD2B5F9D3A00D6F35C /* Beactive2App.swift */,
 				420CD7CF2B5F9D3A00D6F35C /* ContentView.swift */,
+				420CD7F72B5F9D7100D6F35C /* MyTabView.swift */,
+				420CD7FD2B5F9EA500D6F35C /* HealthManager.swift */,
+				420CD7F92B5F9DD700D6F35C /* HomeView.swift */,
+				420CD7FB2B5F9E3C00D6F35C /* ActivityCard.swift */,
 				420CD7D12B5F9D4800D6F35C /* Assets.xcassets */,
 				420CD7D32B5F9D4800D6F35C /* Preview Content */,
 			);
@@ -125,6 +143,14 @@
 				420CD7EA2B5F9D4A00D6F35C /* Beactive2UITestsLaunchTests.swift */,
 			);
 			path = Beactive2UITests;
+			sourceTree = "<group>";
+		};
+		420FF1BA2B5FA35200B2A4C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				420FF1BB2B5FA35200B2A4C0 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				420CD7D02B5F9D3A00D6F35C /* ContentView.swift in Sources */,
+				420CD7FE2B5F9EA500D6F35C /* HealthManager.swift in Sources */,
+				420CD7FA2B5F9DD700D6F35C /* HomeView.swift in Sources */,
+				420CD7F82B5F9D7100D6F35C /* MyTabView.swift in Sources */,
 				420CD7CE2B5F9D3A00D6F35C /* Beactive2App.swift in Sources */,
+				420CD7FC2B5F9E3C00D6F35C /* ActivityCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,11 +444,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Beactive2/Beactive2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beactive2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please all the app to acces health records ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -442,11 +474,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Beactive2/Beactive2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beactive2/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please all the app to acces health records ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
