@@ -21,11 +21,10 @@ struct ActivityCard: View {
     var body: some View {
         ZStack {
             Color(uiColor: .systemGray6)
-                .cornerRadius(20) // Adjust the corner radius to make it more rounded
-            
-            VStack(spacing: 10) {
-                HStack {
-                    VStack(alignment: .leading, spacing: 5) {
+                .cornerRadius(20)
+            VStack(spacing:10) {
+                HStack (alignment : .top) {
+                    VStack(alignment: .leading, spacing: 10) {
                         Text(activity.title)
                             .font(.system(size: 16))
                         
@@ -37,15 +36,15 @@ struct ActivityCard: View {
                     
                     Image(systemName: activity.image)
                         .foregroundColor(.green)
+                    
                 }
                 
                 Text(activity.amount)
                     .font(.system(size: 24))
             }
-            .padding(15) // Add padding around the VStack
+            .padding()
+
         }
-        .padding(10) // Add additional padding around the entire ZStack
-        .frame(maxWidth: .infinity, alignment: .top) // Ensure the card is at the top
     }
 }
 

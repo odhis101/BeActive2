@@ -29,24 +29,36 @@ struct HomeView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Spacer()
             Text(welcomeArray[currentWelcomeIndex])
                 .foregroundColor(.gray)
                 .font(.largeTitle)
                 .padding()
                 .foregroundColor(.secondary)
-                .transition(.opacity) // You can add a transition for the animation
+                .transition(.opacity)
+                .multilineTextAlignment(.center)
                 .animation(.easeOut(duration: 0.5))
+                
                 .onAppear {
                     startWelcomeTimer()
                 }
-            Spacer()
-
+            
+            /*
             LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
                 ForEach(dummyActivities, id: \.title) { activity in
                     ActivityCard(activity: activity)
                 }
+                
             }
+             */
+            LazyVGrid(columns: Array(repeating: GridItem(spacing: 20), count: 2)) {
+                ForEach(Array(manager.activities.values), id: \.title) { activity in
+                    ActivityCard(activity: activity)
+                }
+            }
+
+            
+            Spacer()
+
         }
         .alignmentGuide(.top) { d in d[.top] }
     }

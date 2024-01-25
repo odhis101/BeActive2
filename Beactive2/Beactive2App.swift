@@ -21,8 +21,12 @@ struct Beactive2App: App {
                     // Call fetchTodaySteps when the app starts
                     manager.fetchTodaySteps()
                     manager.fetchTodayCalories()
-                    manager.fetchWeekRunningStats()
-                    manager.fetchTodayCalories()
+                    //manager.fetchWeekRunningStatss()
+                    manager.fetchSampleRunningDistance()
+                    manager.fetchTodayDistanceWalkingRunning()
+                    manager.fetchBloodPressureData()
+                    manager.fetchHeartRateData()
+                    
 
 
                     
