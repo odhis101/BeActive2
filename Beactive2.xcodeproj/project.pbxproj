@@ -19,6 +19,8 @@
 		420CD7FC2B5F9E3C00D6F35C /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7FB2B5F9E3C00D6F35C /* ActivityCard.swift */; };
 		420CD7FE2B5F9EA500D6F35C /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420CD7FD2B5F9EA500D6F35C /* HealthManager.swift */; };
 		420FF1BC2B5FA35200B2A4C0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420FF1BB2B5FA35200B2A4C0 /* HealthKit.framework */; };
+		425077B22B9EE03300BAE8C5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 425077B12B9EE03300BAE8C5 /* GoogleSignIn */; };
+		425077B42B9EE03300BAE8C5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 425077B32B9EE03300BAE8C5 /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425077B42B9EE03300BAE8C5 /* GoogleSignInSwift in Frameworks */,
 				420FF1BC2B5FA35200B2A4C0 /* HealthKit.framework in Frameworks */,
+				425077B22B9EE03300BAE8C5 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +173,10 @@
 			dependencies = (
 			);
 			name = Beactive2;
+			packageProductDependencies = (
+				425077B12B9EE03300BAE8C5 /* GoogleSignIn */,
+				425077B32B9EE03300BAE8C5 /* GoogleSignInSwift */,
+			);
 			productName = Beactive2;
 			productReference = 420CD7CA2B5F9D3A00D6F35C /* Beactive2.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +249,9 @@
 				Base,
 			);
 			mainGroup = 420CD7C12B5F9D3A00D6F35C;
+			packageReferences = (
+				425077B02B9EE03300BAE8C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 420CD7CB2B5F9D3A00D6F35C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -448,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beactive2/Preview Content\"";
+				DEVELOPMENT_TEAM = 6GK5N5D9KT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please all the app to acces health records ";
@@ -478,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Beactive2/Preview Content\"";
+				DEVELOPMENT_TEAM = 6GK5N5D9KT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please all the app to acces health records ";
@@ -611,6 +624,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		425077B02B9EE03300BAE8C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		425077B12B9EE03300BAE8C5 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 425077B02B9EE03300BAE8C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		425077B32B9EE03300BAE8C5 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 425077B02B9EE03300BAE8C5 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 420CD7C22B5F9D3A00D6F35C /* Project object */;
 }
